@@ -9,14 +9,48 @@
   "storyAlt": "A family walking outdoors together",
   "storyDescription": "Capturing the tender, joyful moments that turn ordinary days into lifelong memories.",
   "journeyPrompt": "Where does your journey start?",
+  "featureCard": {
+    "eyebrow": "crafted for your story",
+    "title": "Where does your journey start?",
+    "description": "I create relaxed, honest portraits that celebrate the in-between moments, the quiet looks, and the memories you’ll want to keep forever.",
+    "ctaText": "Book a session",
+    "ctaHref": "/about",
+    "image": "/images/feature-card.jpg",
+    "imageAlt": "A portrait of a woman with warm natural light"
+  },
   "gallery": [
     {
       "src": "/images/gallery-1.jpg",
-      "alt": "An elegant maternity portrait in a courtyard"
+      "alt": "An elegant maternity portrait in a courtyard",
+      "href": "/about"
     },
     {
       "src": "/images/gallery-2.jpg",
-      "alt": "A close portrait of a mother holding her newborn"
+      "alt": "A close portrait of a mother holding her newborn",
+      "href": "/about"
     }
-  ]
+  ],
+  "about": {
+    "brand": "Emilia James",
+    "nav": ["Home", "About", "Experience", "Offerings", "Layouts", "Inquire"],
+    "introBadge": "ADVENTURE SEEKER. CREATIVE. ULTIMATE HYPE GIRL.",
+    "heroImage": "/images/about-hero.jpg",
+    "heroAlt": "A woman sitting outdoors in a relaxed, editorial portrait",
+    "heroName": "Emilia",
+    "heroCaption": "CAPTURING ORGANIC LOVE STORIES IN NATURE SINCE 2015",
+    "storyHeading": "Hey there, I'm Emilia",
+    "storySubheading": "SURROUNDED BY NATURE, CAPTURING YOU AS THE MAIN CHARACTER OF YOUR LOVE STORY",
+    "storyParagraphs": [
+      "Ipsum dolor sit amet consectetur adipiscing. Enim facilisi gravida neque convallis a cras semper. Ultrices sagittis orci a scelerisque purus semper eget duis. Faucibus purus in massa tempor.",
+      "Mauris pharetra et ultrices neque ornare aenean euismod elementum. Nulla porttitor massa id neque aliquam vestibulum. At tellus at urna condimentum mattis est Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Mauris pharetra et ultrices neque ornare aenean euismod elementum. Nulla porttitor massa id neque aliquam vestibulum. At tellus at urna condimentum mattis est Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    ],
+    "portraitImage": "/images/about-portrait.jpg",
+    "portraitAlt": "A portrait of Emilia standing outside in warm natural light",
+    "signature": "capturing your story",
+    "galleryImage": "/images/about-gallery.jpg",
+    "galleryAlt": "A couple sharing a quiet moment outdoors",
+    "lowerTitle": "Organically capturing the sweetest moments of pure love with my couples",
+    "lowerDescription": "MY APPROACH IS ORGANIC AND FLEXIBLE TO CAPTURE EVERY MOMENT OF THE STORY"
+  }
 }
