@@ -1,0 +1,22 @@
+{
+  "name": "Naomi Holligan",
+  "subtitle": "BUILT WITH MONTRÉAL THEME",
+  "heroImage": "/images/hero-family.jpg",
+  "heroAlt": "A family portrait of a mother, father, and newborn baby",
+  "photographyNote": "LONDON MATERNITY, NEWBORN & FAMILY PHOTOGRAPHER",
+  "storyTitle": "Your Greatest Adventure Is About To Begin!",
+  "storyImage": "/images/story-moments.jpg",
+  "storyAlt": "A family walking outdoors together",
+  "storyDescription": "Capturing the tender, joyful moments that turn ordinary days into lifelong memories.",
+  "journeyPrompt": "Where does your journey start?",
+  "gallery": [
+    {
+      "src": "/images/gallery-1.jpg",
+      "alt": "An elegant maternity portrait in a courtyard"
+    },
+    {
+      "src": "/images/gallery-2.jpg",
+      "alt": "A close portrait of a mother holding her newborn"
+    }
+  ]
+}
