@@ -1,71 +1,12 @@
-import fs from "fs";
-import path from "path";
 import Image from "next/image";
-import Link from "next/link";
-
-type AboutData = {
-  brand: string;
-  nav: string[];
-  introBadge: string;
-  heroImage: string;
-  heroAlt: string;
-  heroName: string;
-  heroCaption: string;
-  storyHeading: string;
-  storySubheading: string;
-  storyParagraphs: string[];
-  portraitImage: string;
-  portraitAlt: string;
-  signature: string;
-  galleryImage: string;
-  galleryAlt: string;
-  lowerTitle: string;
-  lowerDescription: string;
-};
-
-function getAboutData(): AboutData {
-  const dataPath = path.join(process.cwd(), "public", "data.json");
-  const file = fs.readFileSync(dataPath, "utf8");
-  const parsed = JSON.parse(file) as { about: AboutData };
-  return parsed.about;
-}
+import { getSiteData } from "@/lib/siteData";
 
 export default function AboutPage() {
-  const data = getAboutData();
+  const data = getSiteData().about;
 
   return (
     <main className="min-h-screen bg-[var(--page-bg)] text-[var(--text)]">
       <div className="mx-auto max-w-[1320px] px-3 py-5 sm:px-6 lg:px-8">
-        <header className="border-b border-[var(--border)] bg-[var(--panel)]/90 px-3 py-4 sm:px-5 lg:px-8">
-          <div className="flex items-center justify-between gap-4">
-            <Link
-              href="/"
-              className="font-serif text-[2rem] leading-none tracking-[-0.06em] text-[var(--text)] sm:text-[2.5rem]"
-            >
-              {data.brand}
-            </Link>
-
-            <nav className="hidden items-center gap-6 text-[0.58rem] font-medium uppercase tracking-[0.25em] text-[var(--muted)] lg:flex">
-              {data.nav.map((item) => (
-                <Link
-                  key={item}
-                  href="/"
-                  className="transition-opacity hover:opacity-80"
-                >
-                  {item}
-                </Link>
-              ))}
-            </nav>
-
-            <Link
-              href="/"
-              className="hidden rounded-full border border-[var(--border)] bg-[var(--panel)] px-4 py-2 text-[0.58rem] font-medium uppercase tracking-[0.18em] text-[var(--text)] transition-colors hover:bg-[var(--page-bg)] sm:inline-flex"
-            >
-              Inquire
-            </Link>
-          </div>
-        </header>
-
         <section className="overflow-hidden bg-[#c8b08f] px-4 pb-6 pt-6 sm:px-6 lg:px-8 lg:pb-8">
           <div className="grid items-end gap-6 lg:grid-cols-[0.7fr_1.3fr_0.7fr]">
             <div className="max-w-[170px] text-[0.52rem] font-medium uppercase tracking-[0.25em] text-white/80 sm:text-[0.64rem]">
@@ -117,7 +58,7 @@ export default function AboutPage() {
               </p>
 
               <div className="mt-6 space-y-5 text-[0.94rem] leading-7 text-[var(--text)]/80">
-                {data.storyParagraphs.map((paragraph) => (
+                {data.storyParagraphs.map((paragraph: string) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>

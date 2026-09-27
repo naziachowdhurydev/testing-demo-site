@@ -1,4 +1,13 @@
 {
+  "brand": "Emilia James",
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/about" },
+    { "label": "Experience", "href": "/experience" },
+    { "label": "Offerings", "href": "/offerings" },
+    { "label": "Layouts", "href": "/layouts" },
+    { "label": "Inquire", "href": "/inquire" }
+  ],
   "name": "Naomi Holligan",
   "subtitle": "BUILT WITH MONTRÉAL THEME",
   "heroImage": "/images/hero-family.jpg",
@@ -32,7 +41,6 @@
   ],
   "about": {
     "brand": "Emilia James",
-    "nav": ["Home", "About", "Experience", "Offerings", "Layouts", "Inquire"],
     "introBadge": "ADVENTURE SEEKER. CREATIVE. ULTIMATE HYPE GIRL.",
     "heroImage": "/images/about-hero.jpg",
     "heroAlt": "A woman sitting outdoors in a relaxed, editorial portrait",
@@ -52,5 +60,102 @@
     "galleryAlt": "A couple sharing a quiet moment outdoors",
     "lowerTitle": "Organically capturing the sweetest moments of pure love with my couples",
     "lowerDescription": "MY APPROACH IS ORGANIC AND FLEXIBLE TO CAPTURE EVERY MOMENT OF THE STORY"
+  },
+  "experience": {
+    "eyebrow": "our story",
+    "title": "A life lived in quiet, meaningful frames",
+    "description": "We document the real rhythm of your life — slow mornings, joyful gatherings, and the effortless love that deserves to be remembered.",
+    "image": "/images/feature-card.jpg",
+    "imageAlt": "An emotional portrait in warm editorial tones",
+    "timeline": [
+      {
+        "year": "2015",
+        "title": "First frame",
+        "text": "Our journey began with a love for honest, documentary storytelling and a deep appreciation for natural light."
+      },
+      {
+        "year": "2018",
+        "title": "Growing stories",
+        "text": "We expanded into weddings, families, and intimate portraits with a softer and more personal visual language."
+      },
+      {
+        "year": "2024",
+        "title": "Now sharing more",
+        "text": "Every new chapter brings a deeper connection to the people and places that shape our work."
+      }
+    ]
+  },
+  "offerings": {
+    "eyebrow": "what we offer",
+    "title": "Thoughtful imagery for the moments that matter most",
+    "services": [
+      {
+        "badge": "maternity",
+        "title": "Maternity",
+        "description": "Soft, editorial portraits that celebrate the anticipation and tenderness of your growing family.",
+        "image": "/images/gallery-1.jpg",
+        "imageAlt": "Maternity portrait outdoors"
+      },
+      {
+        "badge": "newborn",
+        "title": "Newborn",
+        "description": "Quiet, intimate sessions designed around your baby’s first peaceful moments in a calm studio setting.",
+        "image": "/images/feature-card.jpg",
+        "imageAlt": "Newborn portrait with warm light"
+      },
+      {
+        "badge": "family",
+        "title": "Family",
+        "description": "Natural, heartfelt stories of the people who make your home feel like home.",
+        "image": "/images/story-moments.jpg",
+        "imageAlt": "Family portrait outdoors"
+      }
+    ]
+  },
+  "layouts": {
+    "eyebrow": "showcase",
+    "title": "A curated collection of story-led visual moments",
+    "items": [
+      {
+        "title": "Morning light",
+        "description": "Intimate portraits shaped by gentle morning glow and honest emotion.",
+        "image": "/images/about-hero.jpg",
+        "imageAlt": "Morning portrait session"
+      },
+      {
+        "title": "Late summer",
+        "description": "Warm, golden scenes composed around movement, connection, and peace.",
+        "image": "/images/about-gallery.jpg",
+        "imageAlt": "Outdoor portrait in warm sunset tones"
+      }
+    ]
+  },
+  "inquire": {
+    "eyebrow": "book your session",
+    "title": "Let’s create something timeless together",
+    "description": "Tell me about your story, your date, and the feeling you want your photographs to hold.",
+    "detailsLabel": "Email",
+    "email": "hello@emiliajames.com",
+    "buttonText": "Send inquiry",
+    "fields": [
+      {
+        "label": "Name",
+        "name": "name",
+        "type": "text",
+        "placeholder": "Your name"
+      },
+      {
+        "label": "Email",
+        "name": "email",
+        "type": "email",
+        "placeholder": "Your email"
+      },
+      {
+        "label": "Project details",
+        "name": "message",
+        "type": "textarea",
+        "placeholder": "Tell me about your session"
+      }
+    ]
   }
 }
