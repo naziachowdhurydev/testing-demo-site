@@ -18,15 +18,26 @@
   "storyAlt": "A family walking outdoors together",
   "storyDescription": "Capturing the tender, joyful moments that turn ordinary days into lifelong memories.",
   "journeyPrompt": "Where does your journey start?",
-  "featureCard": {
-    "eyebrow": "crafted for your story",
-    "title": "Where does your journey start?",
-    "description": "I create relaxed, honest portraits that celebrate the in-between moments, the quiet looks, and the memories you’ll want to keep forever.",
-    "ctaText": "Book a session",
-    "ctaHref": "/about",
-    "image": "/images/feature-card.jpg",
-    "imageAlt": "A portrait of a woman with warm natural light"
-  },
+  "featureCards": [
+    {
+      "eyebrow": "crafted for your story",
+      "title": "Where does your journey start?",
+      "description": "I create relaxed, honest portraits that celebrate the in-between moments, the quiet looks, and the memories you’ll want to keep forever.",
+      "ctaText": "About",
+      "ctaHref": "/about",
+      "image": "/images/feature-card.jpg",
+      "imageAlt": "A portrait of a woman with warm natural light"
+    },
+    {
+      "eyebrow": "our story",
+      "title": "A life lived in quiet, meaningful frames",
+      "description": "We document the rhythm of your life with gentle, honest storytelling and imagery that keeps the feeling of the moment alive.",
+      "ctaText": "Experience",
+      "ctaHref": "/experience",
+      "image": "/images/about-hero.jpg",
+      "imageAlt": "An outdoor portrait in warm natural editorial light"
+    }
+  ],
   "gallery": [
     {
       "src": "/images/gallery-1.jpg",
@@ -36,7 +47,7 @@
     {
       "src": "/images/gallery-2.jpg",
       "alt": "A close portrait of a mother holding her newborn",
-      "href": "/about"
+      "href": "/experience"
     }
   ],
   "about": {

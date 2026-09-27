@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 import Image from "next/image";
 import Link from "next/link";
-import HomeFeatureCard from "@/component/HomeFeatureCard";
 
 type GalleryItem = {
   src: string;
@@ -31,7 +30,8 @@ type SiteData = {
   storyAlt: string;
   storyDescription: string;
   journeyPrompt: string;
-  featureCard: FeatureCardData;
+  featureCards?: FeatureCardData[];
+  featureCard?: FeatureCardData;
   gallery: GalleryItem[];
 };
 
@@ -43,6 +43,8 @@ function getHomeData(): SiteData {
 
 export default function Home() {
   const data = getHomeData();
+  const cards = (data.featureCards ??
+    (data.featureCard ? [data.featureCard] : [])) as FeatureCardData[];
 
   return (
     <main className="min-h-screen bg-(--page-bg) px-4 py-10 sm:px-6 lg:px-8">
@@ -113,13 +115,11 @@ export default function Home() {
           </div>
         </section>
 
-        <HomeFeatureCard card={data.featureCard} />
-
         <section className="mt-8 grid gap-5 sm:grid-cols-2">
-          {data.gallery.map((item) => (
+          {data.gallery.map((item, index) => (
             <Link
               key={item.src}
-              href={item.href ?? "/about"}
+              href={index === 0 ? "/about" : "/experience"}
               className="block overflow-hidden rounded-[18px] border border-(--border) bg-(--panel) p-3 shadow-[0_12px_22px_rgba(24,20,18,0.05)] transition-transform duration-200 hover:-translate-y-0.5"
             >
               <div className="relative aspect-5/4 w-full overflow-hidden rounded-xl">
